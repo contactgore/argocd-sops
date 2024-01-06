@@ -1,32 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  labels:
-    app: webserver
-    stack: labs
-  name: webserver
+  name: nginx-deployment
 spec:
-  replicas: 1
   selector:
     matchLabels:
-      app: webserver
+      app: nginx
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
     metadata:
       labels:
-        app: webserver
+        app: nginx
     spec:
       containers:
       - name: nginx
-        image: nginx:latest
-        envFrom:
-        - configMapRef:
-            name: toto
+        image: nginx:1.14.2
         ports:
-        - name: http
-          containerPort: 80
-          protocol: TCP
-        resources:
-          limits:
-            cpu: 200m
-          requests:
-            cpu: 100m
-status: {}
+        - containerPort: 80
