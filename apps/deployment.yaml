@@ -10,9 +10,6 @@ spec:
   selector:
     matchLabels:
       app: webserver
-  strategy: {}
-  dfdfdsf: dsds
-  template:
     metadata:
       labels:
         app: webserver
