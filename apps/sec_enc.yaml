@@ -1,34 +1,8 @@
 apiVersion: v1
 kind: Secret
 metadata:
-    name: mysecret
+  name: mysecret
 type: Opaque
 data:
-    username: ENC[AES256_GCM,data:xbgFAMX5w8A=,iv:RHg44/a3ULYdUz6UBqg2PsPMoNOD+unRlEiNDbjDlFA=,tag:o9g1x26JFCzHwDeDIdKkOA==,type:str]
-    password: ENC[AES256_GCM,data:QwT4JclX4t/o7Rd99JpJpA==,iv:0oudhxy6kXWg+V1FhTu4vYViwXCLPYJg0mODT4sZ/SQ=,tag:oX82P7HGnWAfQGbyhTiB6g==,type:str]
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age: []
-    lastmodified: "2024-01-06T09:29:32Z"
-    mac: ENC[AES256_GCM,data:AS4d8MbHQlW2yQukctqA2knZPvdPoRQeF6g5SLq0CS82AfY78v24wlBq7kban8jw6DBlCdgUBKn6aB9PawT1ib829FDHsrTWbml4H86PAvEK6RgE3dfvn662H6qN7ZozsTidQOgV0jB3JEj3Zmhl7NDpur0IusvwwihUNd6qyS8=,iv:Dq4oz2qDqA45PFiUDnuXL5JqSOz13gBvspjVDMHVaoQ=,tag:1bFYPedapCsJpyJDYI90Kw==,type:str]
-    pgp:
-        - created_at: "2024-01-06T09:29:32Z"
-          enc: |-
-            -----BEGIN PGP MESSAGE-----
-
-            hQEMAyUpShfNkFB/AQgAgK+LQyh4LVseFFv9lgmVsrE+r6tiy4wPpCAISiyhjmEu
-            Fc8GzHvAEtuu8evK+yusANfnczImveWcht/ha/SbxlYRcLRa0Sj/BVAlZmSlvCgC
-            BrTBkUKfGqvwViiAAD3MyRFsOOiIIrMag5CeL5pQ9w+CfGJqVSD6Z+IxTAEugVty
-            sqGC3M3of7urAZrG7O+YpbwqPxC0iwlClilZMpMeas1oL/ji9/c6tC3Dkj3FPDnG
-            OcVRw9lJ1iDCExpmRSF6EAYFAN99z+LzVbqXXWKXmGOzbwXMmYXHSYeCuL0s652C
-            ETbx5U+qPxjn8omQMckOvvkF1vNtC5YxnzS918z/PNJcAYVebRl7FqcMrtSAIB1F
-            Equd3rOTZ76YVLUcE2aSkzBYaWcUwOTs5USBxEWIwgxdkP1JB00lGETZIHYDRSoM
-            N2pCZ1USz0oX+GKu8byzQn+iAx+OHE/wWQIFA4M=
-            =bYAc
-            -----END PGP MESSAGE-----
-          fp: FBC7B9E2A4F9289AC0C1D4843D16CEE4A27381B4
-    unencrypted_regex: ^(apiVersion|metadata|kind|type)$
-    version: 3.8.1
+  username: YWRtaW4=
+  password: MWYyZDFlMmU2N2Rm
